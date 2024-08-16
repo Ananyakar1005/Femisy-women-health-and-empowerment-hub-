@@ -7,7 +7,14 @@
 	
 	
 	
-	@charset "utf-8";
+
+   
+
+ 
+
+ 
+
+@charset "utf-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
@@ -36,7 +43,8 @@ body {
 h2 {
     letter-spacing: 10px;
     font-size: 9em;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    /* Removed the reflection effect */
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,#0008); */
     line-height: 0.75em;
     outline: none;
     animation: animate 10s linear infinite;
@@ -45,7 +53,8 @@ h2 {
 p {
     letter-spacing: 9px;
     font-size: 2.5em;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    /* Removed the reflection effect */
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,#0008); */
     line-height: 0.89em;
     outline: none;
     animation: animate 8s linear infinite;
@@ -140,6 +149,14 @@ a:hover span:nth-child(4) {
 
     18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
         color: #fff;
+        text-shadow: 0 0 5px #03bcf4, /* Reduced shadow blur */
+        0 0 10px #03bcf4, 
+        0 0 20px #03bcf4, 
+        0 0 40px #03bcf4, 
+        0 0 80px #03bcf4;
+    }
+}
+
         text-shadow: 0 0 5px #03bcf4, /* Reduced shadow blur */
         0 0 10px #03bcf4, 
         0 0 20px #03bcf4, 
